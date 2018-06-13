@@ -12,7 +12,7 @@ public class ClassInfo extends ASTVisitor implements Comparable<ClassInfo> {
 
     private String name, pkg, project;
     private List<String> dependencies;
-    private boolean directBadDependency = false;
+    private boolean hasExternalDependencies = false;
     private boolean indirectBadDependency = false;
 
     public ClassInfo(String name, String pkg, String project){
@@ -31,19 +31,23 @@ public class ClassInfo extends ASTVisitor implements Comparable<ClassInfo> {
         if (constructorBinding!=null)  dependencyPkg = constructorBinding.getDeclaringClass().getPackage().getName();
         if (dependencyPkg.equals("")) dependencyPkg = "<no package>";
         String dependencyFullName = dependencyPkg + "." + dependencyName;
+
+        if (isExternalDependency(dependencyFullName)) hasExternalDependencies = true;
+
         this.dependencies.add(dependencyFullName);
         return true;
     }
 
-    @Override
+   /*@Override
     public boolean visit(ImportDeclaration importDeclaration){
-        if (isBadDependency(importDeclaration)) directBadDependency = true;
+        String importName = importDeclaration.getName().toString();
+        System.out.println(importName);
+        if (isExternalDependency(importName)) directBadDependency = true;
         return true;
     }
-
-    private boolean isBadDependency(ImportDeclaration importDeclaration) {
-        String importName = importDeclaration.getName().toString();
-        return !importName.contains("org.apache."+ project) && !importName.startsWith("java.util");
+    */
+    private boolean isExternalDependency(String dependency) {
+        return !dependency.contains("org.apache."+ project) && !dependency.startsWith("java.util");
     }
 
     public String getFullName(){
