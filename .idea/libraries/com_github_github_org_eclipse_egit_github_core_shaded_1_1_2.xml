@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.github.github:org.eclipse.egit.github.core.shaded:1.1.2" type="repository">
+    <properties maven-id="com.github.github:org.eclipse.egit.github.core.shaded:1.1.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/github/org.eclipse.egit.github.core.shaded/1.1.2/org.eclipse.egit.github.core.shaded-1.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

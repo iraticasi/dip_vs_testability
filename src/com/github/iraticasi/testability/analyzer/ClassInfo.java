@@ -2,46 +2,48 @@ package com.github.iraticasi.testability.analyzer;
 
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.ClassInstanceCreation;
+import org.eclipse.jdt.core.dom.IMethodBinding;
 import org.eclipse.jdt.core.dom.ImportDeclaration;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClassInfo extends ASTVisitor {
+public class ClassInfo extends ASTVisitor implements Comparable<ClassInfo> {
 
-    private String name, pkg;
+    private String name, pkg, project;
     private List<String> dependencies;
-    private boolean testable= true;
+    private boolean directBadDependency = false;
+    private boolean indirectBadDependency = false;
 
-    public ClassInfo(String name, String pkg){
+    public ClassInfo(String name, String pkg, String project){
         this.name = name;
         this.pkg = pkg;
+        this.project = project;
         this.dependencies = new ArrayList<>();
-        System.out.println(getFullName());
     }
 
     @Override
     public boolean visit(ClassInstanceCreation creation){
 
         String dependencyName = creation.getType().toString();
-        creation.resolveConstructorBinding();
-        String dependencyPkg = creation.resolveConstructorBinding().getDeclaringClass().getPackage().getName();
+        IMethodBinding constructorBinding = creation.resolveConstructorBinding();
+        String dependencyPkg="<not resolve>";
+        if (constructorBinding!=null)  dependencyPkg = constructorBinding.getDeclaringClass().getPackage().getName();
         if (dependencyPkg.equals("")) dependencyPkg = "<no package>";
         String dependencyFullName = dependencyPkg + "." + dependencyName;
-        System.out.println("\tdependency:" + dependencyFullName);
         this.dependencies.add(dependencyFullName);
         return true;
     }
 
     @Override
     public boolean visit(ImportDeclaration importDeclaration){
-        if (isBadDependency(importDeclaration)) testable = false;
+        if (isBadDependency(importDeclaration)) directBadDependency = true;
         return true;
     }
 
     private boolean isBadDependency(ImportDeclaration importDeclaration) {
-        System.out.println("\timport: " + importDeclaration.getName());
-        return importDeclaration.getName().toString().contains("java.io");
+        String importName = importDeclaration.getName().toString();
+        return !importName.contains("org.apache."+ project) && !importName.startsWith("java.util");
     }
 
     public String getFullName(){
@@ -49,6 +51,36 @@ public class ClassInfo extends ASTVisitor {
     }
 
     public boolean isTestable() {
-        return testable;
+        return !directBadDependency && !indirectBadDependency;
+    }
+
+    public List<String> getDependencies() {
+        return dependencies;
+    }
+
+    public void setIndirectBadDependency(boolean indirectBadDependency) {
+        this.indirectBadDependency = indirectBadDependency;
+    }
+
+    @Override
+    public String toString(){
+        return "{ " + this.getFullName() + ", testable: " + this.isTestable() + ", dependencies: " + dependencies.toString() + "}\n";
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPkg(){
+        return pkg;
+    }
+
+    @Override
+    public int compareTo(ClassInfo classInfo) {
+        if (classInfo.getPkg().equals(pkg)){
+            return classInfo.getName().compareTo(name);
+        }else{
+            return classInfo.getPkg().compareTo(pkg);
+        }
     }
 }
