@@ -1,4 +1,4 @@
 examples/
 apache_projects/
 apache_projects.json
-test_checker_report.csv
+reports/

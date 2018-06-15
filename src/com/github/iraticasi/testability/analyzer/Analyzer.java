@@ -27,7 +27,7 @@ public class Analyzer {
         sourceDirPaths = new ArrayList<>();
         findAllClasses(project,sourceFilePaths, sourceDirPaths);
         this.parseClasses();;
-        this.spreadBadDependencies();
+        this.spreadExternalDependencies();
         return classes;
     }
 
@@ -45,25 +45,33 @@ public class Analyzer {
         FileASTRequestor requestor = new FileASTRequestor() {
             public void acceptAST(String sourceFilePath, CompilationUnit cu) {
                 if (cu.types().size()>0) {
-                    String name = ((AbstractTypeDeclaration) cu.types().get(0)).getName().toString();
-                    String pkg = cu.getPackage() == null ? "<no package>" : cu.getPackage().getName().toString();
-                    Class<?> clazz = ASTNode.nodeClassForType(cu.getNodeType());
-                    ClassInfo classInfo = new ClassInfo(name, pkg, project.toString());
-                    cu.accept(classInfo);
-                    if (classInfo.getName().equals("ZeppelinIT")) System.out.println(classInfo);
-                    classes.add(classInfo);
+                    TypeDeclaration typeDeclaration=null;
+                    for (AbstractTypeDeclaration declaration: (List<AbstractTypeDeclaration>) cu.types()){
+                        if (declaration instanceof TypeDeclaration) typeDeclaration = (TypeDeclaration) declaration;
+                    }
+                    if (typeDeclaration!=null){
+                        if (!typeDeclaration.isInterface()) {
+                            String name = ((AbstractTypeDeclaration) cu.types().get(0)).getName().toString();
+                            String pkg = cu.getPackage() == null ? "<no package>" : cu.getPackage().getName().toString();
+                            Class<?> clazz = ASTNode.nodeClassForType(cu.getNodeType());
+                            ClassInfo classInfo = new ClassInfo(name, pkg, project.toString());
+                            cu.accept(classInfo);
+                            ;
+                            classes.add(classInfo);
+                        }
+                    }
                 }
             }
         };
         parser.createASTs(sourceFilePaths.toArray(new String[sourceFilePaths.size()]), null, new String[]{}, requestor , null );
     }
 
-    private void spreadBadDependencies() {
+    private void spreadExternalDependencies() {
         //split classes
         List<ClassInfo> bad = new ArrayList<>();
         List<ClassInfo> good = new ArrayList<>();
         for (ClassInfo classInfo: classes){
-            if (classInfo.isTestable()){
+            if (classInfo.hasExternalDependencies()){
                 good.add(classInfo);
             }else{
                 bad.add(classInfo);
@@ -78,7 +86,7 @@ public class Analyzer {
                 ClassInfo goodClassInfo = good.get(j);
                 if (goodClassInfo.getDependencies().contains(badClassInfo.getFullName())){
                     dependencyMatch = true;
-                    goodClassInfo.setIndirectBadDependency(true);
+                    goodClassInfo.setExternalDependencies(true);
                     good.remove(j);
                     bad.add(goodClassInfo);
                 }
@@ -92,19 +100,15 @@ public class Analyzer {
         File csvFile = new File(csvPath);
         Writer writer = new FileWriter(csvPath);
         CSVWriter csvWriter = new CSVWriter(writer);
-        String[] headerRecord = {"Package", "Class", "testable"};
+        String[] headerRecord = {"Package", "Class", "External dependencies"};
         csvWriter.writeNext(headerRecord);
-        Collections.sort(classes);
-        int i=0;
+        Collections.sort(classes); //by package, then by name
         for (ClassInfo classInfo: classes){
             String[] record = {classInfo.getPkg(),
                     classInfo.getName(),
-                    classInfo.isTestable() ? "Y" : "N"};
-            if (classInfo.isTestable()) i++;
+                    classInfo.hasExternalDependencies() ? "Y" : "N"};
             csvWriter.writeNext(record);
         }
-        System.out.println("#classes: " + classes.size());
-        System.out.println("#testable " + i);
         csvWriter.close();
 
     }
@@ -121,7 +125,8 @@ public class Analyzer {
                 } else {
                     if (fileEntry.getName().endsWith(".java") &&
                             !isTest(fileEntry.getName()) &&
-                            !fileEntry.getName().equals("module-info.java")) {
+                            !fileEntry.getName().equals("module-info.java") &&
+                            !fileEntry.getName().equals("package-info.java")) {
                         sourceFilePaths.add(fileEntry.getAbsolutePath());
                         numFiles++;
 

@@ -16,69 +16,129 @@ public class TestChecker {
     private File folder;
     private CSVWriter csvWriter;
 
+
     public TestChecker(String folderName) {
         this.folder = new File(folderName);
 
     }
-    private void report() throws IOException {
-        String csvPath = "test_checker_report.csv";
+
+    private class LibraryInfo{
+        private int libraryWithTest=0, libraryNoTest=0, noLibraryWithTest=0, noLibraryNoTest=0;
+        private String libraryName;
+
+        public LibraryInfo(String libraryName){
+            this.libraryName = libraryName;
+        }
+
+        public void countClass(ClassInfo clazz, boolean hasTest){
+            if (clazz.hasDependency(libraryName)){
+                if (hasTest) libraryWithTest++;
+                else libraryNoTest++;
+            }else{
+                if (hasTest) noLibraryWithTest++;
+                else noLibraryNoTest++;
+            }
+        }
+
+        public String[] getRecord(){
+            return new String[]{
+                    libraryName,
+                    String.valueOf(libraryWithTest),
+                    String.valueOf(libraryNoTest),
+                    String.valueOf(noLibraryWithTest),
+                    String.valueOf(noLibraryNoTest)};
+        }
+    }
+
+
+    private void report(String[] libraries) throws IOException {
+        String csvPath = "libraries_report.csv";
         Writer writer = new FileWriter(csvPath);
         csvWriter = new CSVWriter(writer);
-        String[] headerRecord = {"Project name", "#goodClasses", "#goodWithTest", "#badClasses", "#badWithTest"};
+        String[] headerRecord = {"Library name",
+                "library_dep WITH test",
+                "library_dep NO test",
+                "NO library_dep WITH test",
+                "NO Library_dep NO test"};
         csvWriter.writeNext(headerRecord);
+
+        List<LibraryInfo> libraryInfos = new ArrayList<>();
+        for(String library: libraries){
+            libraryInfos.add(new LibraryInfo(library));
+        }
+
         if (this.folder.exists()) {
             for (final File project : this.folder.listFiles()) {
                 if (project.isDirectory()) {
                     //for each project
                     System.out.println(project);
-                    csvWriter.writeNext(check(project));
+                    countProject(project, libraryInfos);
                 }
             }
         }
+
+        for(LibraryInfo libraryInfo:libraryInfos){
+            csvWriter.writeNext(libraryInfo.getRecord());
+        }
+
+
         csvWriter.close();
 
     }
 
+    private static void countProject(File project, List<LibraryInfo> libraryInfos){
+        List<ClassInfo> classInfos = new Analyzer(project).analyze();
+        Set<String> tests = findAllJavaTest(project);
 
-    private void checkAll() throws IOException {
+        for (ClassInfo cr : classInfos){
+            boolean hasTest = tests.contains(cr.getName() + "Test.java");
+            for (LibraryInfo libraryInfo:libraryInfos){
+                libraryInfo.countClass(cr,hasTest);
+            }
+        }
+
+    }
+
+
+
+    private void checkAllExternal() throws IOException {
         String csvPath = "test_checker_report.csv";
         Writer writer = new FileWriter(csvPath);
         csvWriter = new CSVWriter(writer);
-        String[] headerRecord = {"Project name", "#goodClasses", "#goodWithTest", "#badClasses", "#badWithTest"};
+        String[] headerRecord = {"Project name", "# classes with external dependencies", "of which has test", "# classes without external dependencies", "of which has test"};
         csvWriter.writeNext(headerRecord);
         if (this.folder.exists()) {
             for (final File project : this.folder.listFiles()) {
                 if (project.isDirectory()) {
                 //for each project
                     System.out.println(project);
-                    csvWriter.writeNext(check(project));
+                    csvWriter.writeNext(checkExternal(project));
                 }
             }
         }
         csvWriter.close();
     }
-    public static String[] check(File project){
+    private static String[] checkExternal(File project){
         List<ClassInfo> classInfos = new Analyzer(project).analyze();
         Set<String> tests = findAllJavaTest(project);
-        int goodClasses=0, goodWithTest=0, badClasses=0, badWithTest=0;
+        int noExtClasses=0, noExtWithTest=0, extClasses=0, extWithTest=0;
         for (ClassInfo cr : classInfos){
-            if (cr.isTestable()){
-                goodClasses++;
-                if (tests.contains(cr.getName() + "Test.java")) goodWithTest++;
+            if (cr.hasExternalDependencies()){
+                extClasses++;
+                if (tests.contains(cr.getName() + "Test.java")) extWithTest++;
             }else{
-                badClasses++;
-                if (tests.contains(cr.getName() + "Test.java")) badWithTest++;
+                noExtClasses++;
+                if (tests.contains(cr.getName() + "Test.java")) noExtWithTest++;
+
             }
         }
-        System.out.println("Good percentage: " + (float)goodWithTest/goodClasses);
-        System.out.println("Bad percentage: " + (float)badWithTest/badClasses);
 
         return new String[]{
                 project.getName(),
-                String.valueOf(goodClasses),
-                String.valueOf(goodWithTest),
-                String.valueOf(badClasses),
-                String.valueOf(badWithTest)};
+                String.valueOf(extClasses),
+                String.valueOf(extWithTest),
+                String.valueOf(noExtClasses),
+                String.valueOf(noExtWithTest)};
     }
 
     private static Set<String> findAllJavaTest(File folder) {
@@ -98,8 +158,8 @@ public class TestChecker {
     }
 
     public static void main(String[] args) throws IOException {
-        new TestChecker("apache_projects").checkAll();
-
+        //new TestChecker("apache_projects").checkAllExternal();
+        new TestChecker("apache_projects").report(new String[]{"java.io", "java.sql.", "java.net.", "javax"});
 
 
     }

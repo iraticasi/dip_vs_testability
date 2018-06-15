@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e3ffbd-cd37-4ff9-b8ea-e2f1b995e37a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/examination/DependencyExaminer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/usage.statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/usage.statistics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.test_checker_report.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/analyzer/Analyzer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/analyzer/Analyzer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/analyzer/Analyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/analyzer/Analyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/analyzer/ClassInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/analyzer/ClassInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/coverage/ClassInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/coverage/CoverageReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/coverage/CoverageTest$MemoryClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/coverage/CoverageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/report/TestChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/report/TestChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,35 +27,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+            <state relative-caret-position="703">
+              <caret line="145" column="76" selection-start-line="145" selection-start-column="76" selection-end-line="145" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2520#2521#0" expanded="true" />
-                <element signature="e#2559#2560#0" expanded="true" />
-                <element signature="e#2594#2595#0" expanded="true" />
-                <element signature="e#2663#2664#0" expanded="true" />
-                <element signature="e#2708#2709#0" expanded="true" />
-                <element signature="e#2743#2744#0" expanded="true" />
-                <element signature="e#3100#3101#0" expanded="true" />
-                <element signature="e#3127#3128#0" expanded="true" />
-                <element signature="e#3156#3157#0" expanded="true" />
-                <element signature="e#3182#3183#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,11 +42,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="718">
+              <caret line="161" column="68" selection-start-line="161" selection-start-column="64" selection-end-line="161" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1571#1572#0" expanded="true" />
+                <element signature="e#1615#1616#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/examination/DependencyExaminer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -62,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="165">
               <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,342 +126,74 @@
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/ClassInfo.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageReport.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageTest.java" />
-        <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java" />
-        <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java" />
+        <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="964" />
     <option name="width" value="956" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectUserFactors">
-    <factor id="binaryFeature:liftShorter">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="13,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:liftShorterClasses">
-      <dailyData date="13-6-2018">
-        <observation name="UNDEFINED" value="1,0" />
-        <observation name="false" value="12,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:middleMatching">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="13,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:nonGeneric">
-      <dailyData date="13-6-2018">
-        <observation name="0" value="2,0" />
-        <observation name="UNDEFINED" value="11,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_inResolveScope">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="3,0" />
-        <observation name="true" value="10,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_openedInEditor">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="8,0" />
-        <observation name="true" value="5,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sameDirectory">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="8,0" />
-        <observation name="true" value="5,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sameLogicalRoot">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="8,0" />
-        <observation name="true" value="5,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:prox_sdkOrLibrary">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="8,0" />
-        <observation name="true" value="5,0" />
-      </dailyData>
-    </factor>
-    <factor id="binaryFeature:templates">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="13,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:accessible">
-      <dailyData date="13-6-2018">
-        <observation name="NORMAL" value="13,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:expectedType">
-      <dailyData date="13-6-2018">
-        <observation name="expected" value="4,0" />
-        <observation name="normal" value="9,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:kind">
-      <dailyData date="13-6-2018">
-        <observation name="OTHER" value="1,0" />
-        <observation name="classNameOrGlobalStatic" value="2,0" />
-        <observation name="expectedTypeVariable" value="2,0" />
-        <observation name="normal" value="5,0" />
-        <observation name="variable" value="3,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
-      <dailyData date="13-6-2018">
-        <observation name="unknown" value="13,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_javaInheritance">
-      <dailyData date="13-6-2018">
-        <observation name="false" value="3,0" />
-        <observation name="null" value="10,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:prox_referenceList">
-      <dailyData date="13-6-2018">
-        <observation name="applicableByKind" value="1,0" />
-        <observation name="unknown" value="12,0" />
-      </dailyData>
-    </factor>
-    <factor id="categoricalFeature:recursion">
-      <dailyData date="13-6-2018">
-        <observation name="UNDEFINED" value="5,0" />
-        <observation name="normal" value="8,0" />
-      </dailyData>
-    </factor>
+    <factor id="binaryFeature:liftShorter" />
+    <factor id="binaryFeature:liftShorterClasses" />
+    <factor id="binaryFeature:middleMatching" />
+    <factor id="binaryFeature:nonGeneric" />
+    <factor id="binaryFeature:prox_inResolveScope" />
+    <factor id="binaryFeature:prox_openedInEditor" />
+    <factor id="binaryFeature:prox_sameDirectory" />
+    <factor id="binaryFeature:prox_sameLogicalRoot" />
+    <factor id="binaryFeature:prox_sdkOrLibrary" />
+    <factor id="binaryFeature:templates" />
+    <factor id="categoricalFeature:accessible" />
+    <factor id="categoricalFeature:expectedType" />
+    <factor id="categoricalFeature:kind" />
+    <factor id="categoricalFeature:prox_groovyReferenceListWeigher" />
+    <factor id="categoricalFeature:prox_javaInheritance" />
+    <factor id="categoricalFeature:prox_referenceList" />
+    <factor id="categoricalFeature:recursion" />
     <factor id="completionFinishedType">
-      <dailyData date="13-6-2018">
-        <observation name="cancelled" value="54,0" />
-        <observation name="explicitSelect" value="10,0" />
-        <observation name="typedSelect" value="3,0" />
+      <dailyData date="14-6-2018">
+        <observation name="cancelled" value="8,0" />
       </dailyData>
     </factor>
-    <factor id="completionType">
-      <dailyData date="13-6-2018">
-        <observation name="BASIC" value="18,0" />
-      </dailyData>
-    </factor>
+    <factor id="completionType" />
     <factor id="completionUsage">
-      <dailyData date="13-6-2018">
-        <observation name="count" value="67,0" />
+      <dailyData date="14-6-2018">
+        <observation name="count" value="8,0" />
       </dailyData>
     </factor>
-    <factor id="doubleFeature:explicitProximity">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,08" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="1,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,044103" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:grouping">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:mostUsed">
-      <dailyData date="13-6-2018">
-        <observation name="UNDEFINED" value="8,0" />
-        <observation name="average" value="-25,0" />
-        <observation name="count" value="9,0" />
-        <observation name="max" value="-9,0" />
-        <observation name="min" value="-76,0" />
-        <observation name="variance" value="325,427343" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:nameEnd">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:position">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,08" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="1,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,053096" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prefix">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="-943,88" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="-1153,0" />
-        <observation name="variance" value="104979,930773" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:priority">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_explicitlyImported">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="144,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="300,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="10524,378564" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_knownElement">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="2,24" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="8,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="6,772437" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_sameModule">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,8" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="2,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,560988" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:prox_samePsiMember">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,8" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="2,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,560988" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:query_length">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:result_length">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="8,36" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="18,0" />
-        <observation name="min" value="3,0" />
-        <observation name="variance" value="8,004125" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:sameWords">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="-0,08" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="-1,0" />
-        <observation name="variance" value="0,035267" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:shorter">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:simple">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="0,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="0,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:sorter">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="1,0" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="1,0" />
-        <observation name="min" value="1,0" />
-        <observation name="variance" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:statics">
-      <dailyData date="13-6-2018">
-        <observation name="UNDEFINED" value="7,0" />
-        <observation name="average" value="-3,181818" />
-        <observation name="count" value="11,0" />
-        <observation name="max" value="-3,0" />
-        <observation name="min" value="-4,0" />
-        <observation name="variance" value="0,072049" />
-      </dailyData>
-    </factor>
-    <factor id="doubleFeature:stats">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="3196,4" />
-        <observation name="count" value="25,0" />
-        <observation name="max" value="10000,0" />
-        <observation name="min" value="0,0" />
-        <observation name="variance" value="13277346,461618" />
-      </dailyData>
-    </factor>
-    <factor id="itemPosition">
-      <dailyData date="13-6-2018">
-        <observation name="0" value="9,0" />
-        <observation name="1" value="1,0" />
-      </dailyData>
-    </factor>
-    <factor id="mnemonicsUsage">
-      <dailyData date="13-6-2018">
-        <observation name="total" value="6,0" />
-        <observation name="withMnemonics" value="0,0" />
-      </dailyData>
-    </factor>
-    <factor id="prefixLength">
-      <dailyData date="13-6-2018">
-        <observation name="0" value="2,0" />
-        <observation name="1" value="2,0" />
-        <observation name="3" value="3,0" />
-        <observation name="4" value="2,0" />
-        <observation name="6" value="1,0" />
-      </dailyData>
-    </factor>
-    <factor id="timeBetweenTyping">
-      <dailyData date="13-6-2018">
-        <observation name="average" value="225,964286" />
-        <observation name="count" value="28,0" />
-      </dailyData>
-    </factor>
+    <factor id="doubleFeature:explicitProximity" />
+    <factor id="doubleFeature:grouping" />
+    <factor id="doubleFeature:mostUsed" />
+    <factor id="doubleFeature:nameEnd" />
+    <factor id="doubleFeature:position" />
+    <factor id="doubleFeature:prefix" />
+    <factor id="doubleFeature:priority" />
+    <factor id="doubleFeature:prox_explicitlyImported" />
+    <factor id="doubleFeature:prox_knownElement" />
+    <factor id="doubleFeature:prox_sameModule" />
+    <factor id="doubleFeature:prox_samePsiMember" />
+    <factor id="doubleFeature:query_length" />
+    <factor id="doubleFeature:result_length" />
+    <factor id="doubleFeature:sameWords" />
+    <factor id="doubleFeature:shorter" />
+    <factor id="doubleFeature:simple" />
+    <factor id="doubleFeature:sorter" />
+    <factor id="doubleFeature:statics" />
+    <factor id="doubleFeature:stats" />
+    <factor id="itemPosition" />
+    <factor id="mnemonicsUsage" />
+    <factor id="prefixLength" />
+    <factor id="timeBetweenTyping" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -488,6 +232,13 @@
               <item name="testability2.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="testability" type="462c0819:PsiDirectoryNode" />
+              <item name="examination" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testability2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testability2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testability" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -495,6 +246,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestChecker">
+  <component name="RunManager" selected="Application.Analyzer">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -549,7 +301,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528897770309" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528978001430" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -573,7 +325,7 @@
       </Profilers>
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528897770310" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528978001430" />
       </method>
     </configuration>
     <configuration name="Analyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -650,8 +402,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestChecker" />
         <item itemvalue="Application.Analyzer" />
+        <item itemvalue="Application.TestChecker" />
         <item itemvalue="Application.CoverageTest" />
         <item itemvalue="Application.CoverageReport" />
         <item itemvalue="Application.ClassInfo" />
@@ -672,15 +424,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="-4" y="0" width="1928" height="1084" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19370331" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.19903949" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.18249734" side_tool="true" weight="0.67622083" />
@@ -688,7 +439,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32910052" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.8175027" visible="true" weight="0.36942676" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.8175027" weight="0.38747346" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39915073" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -833,16 +584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/ClassInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/ClassInfo.java" />
     <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/lang/Object.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -850,29 +592,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageReport.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageReport.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/examination/DependencyExaminer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="106" column="10" lean-forward="true" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="165">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -882,40 +613,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="718">
+          <caret line="161" column="68" selection-start-line="161" selection-start-column="64" selection-end-line="161" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1571#1572#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="89" column="49" selection-start-line="89" selection-start-column="49" selection-end-line="89" selection-end-column="49" />
+        <state relative-caret-position="703">
+          <caret line="145" column="76" selection-start-line="145" selection-start-column="76" selection-end-line="145" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2520#2521#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
-            <element signature="e#2663#2664#0" expanded="true" />
-            <element signature="e#2708#2709#0" expanded="true" />
-            <element signature="e#2743#2744#0" expanded="true" />
-            <element signature="e#3100#3101#0" expanded="true" />
-            <element signature="e#3127#3128#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-            <element signature="e#3182#3183#0" expanded="true" />
           </folding>
         </state>
       </provider>
