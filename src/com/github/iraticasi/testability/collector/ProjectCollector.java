@@ -9,6 +9,10 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+
+/**
+ * Collects apache
+ */
 public class ProjectCollector {
 
     public static void main(String[] args) throws IOException, InterruptedException {

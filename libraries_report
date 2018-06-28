@@ -1,0 +1,5 @@
+"Library name","library_dep WITH test","library_dep NO test","NO library_dep WITH test","NO Library_dep NO test"
+"java.io","517","2029","2962","17598"
+"java.sql.","8","54","3471","19573"
+"java.net.","83","345","3396","19282"
+"javax","49","600","3430","19027"

@@ -2,5 +2,25 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/beam" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/cassandra" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/cordova-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/flink" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/groovy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/hbase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/incubator-dubbo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/incubator-heron" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/incubator-skywalking" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/incubator-weex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/jmeter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/kafka" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/rocketmq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/storm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/tomcat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/zeppelin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/zookeeper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/examples/jimgui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/examples/jinterp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/examples/portfolio" vcs="Git" />
   </component>
 </project>

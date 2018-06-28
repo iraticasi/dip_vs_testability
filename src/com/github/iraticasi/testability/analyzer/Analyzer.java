@@ -10,18 +10,37 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.*;
 
+
+/**
+ * Dependency injection violations analyzer for a project
+ *
+ * NOTES:
+ * In this class, "dependency" refers to a violation of the dependency injection principle, i.e. a object
+ * We consider a dependency to be "external" if it is on:
+ * - a class that is neither from the same package nor from java.util
+ * - a class that has external dependencies itself (recursive)
+ * */
+
 public class Analyzer {
 
-    private File project;
-    private List<String> sourceFilePaths;
-    private List<String> sourceDirPaths;
-    private List<ClassInfo> classes;
+    private File project; //Base folder of the project
+    private List<String> sourceFilePaths; //Source files paths
+    private List<String> sourceDirPaths; //Directories paths that contain source file
+    private List<ClassInfo> classes; //project classes
 
+    /**
+     * Creates a analyzer for a project
+     * @param project base folder of the project
+     */
     public Analyzer(File project) {
         this.project = project;
 
     }
 
+    /**
+     * Analyze all java source files in the project
+     * @return list of all java source files info
+     */
     public List<ClassInfo> analyze() {
         sourceFilePaths = new ArrayList<>();
         sourceDirPaths = new ArrayList<>();
@@ -31,6 +50,9 @@ public class Analyzer {
         return classes;
     }
 
+    /**
+     * Parse all the java source files in the project
+     */
     private void parseClasses() {
         //set parser
         ASTParser parser = ASTParser.newParser(AST.JLS10);
@@ -43,20 +65,19 @@ public class Analyzer {
         //parse files into ClassInfo
         this.classes = new ArrayList<>();
         FileASTRequestor requestor = new FileASTRequestor() {
-            public void acceptAST(String sourceFilePath, CompilationUnit cu) {
+            public void acceptAST(String sourceFilePath, CompilationUnit cu) { //for each class
                 if (cu.types().size()>0) {
                     TypeDeclaration typeDeclaration=null;
                     for (AbstractTypeDeclaration declaration: (List<AbstractTypeDeclaration>) cu.types()){
                         if (declaration instanceof TypeDeclaration) typeDeclaration = (TypeDeclaration) declaration;
                     }
-                    if (typeDeclaration!=null){
-                        if (!typeDeclaration.isInterface()) {
+                    if (typeDeclaration!=null){ //if there is any class-interface declaration
+                        if (!typeDeclaration.isInterface()) { //if it's not an interface
+                            //create and add the java info
                             String name = ((AbstractTypeDeclaration) cu.types().get(0)).getName().toString();
                             String pkg = cu.getPackage() == null ? "<no package>" : cu.getPackage().getName().toString();
-                            Class<?> clazz = ASTNode.nodeClassForType(cu.getNodeType());
                             ClassInfo classInfo = new ClassInfo(name, pkg, project.toString());
                             cu.accept(classInfo);
-                            ;
                             classes.add(classInfo);
                         }
                     }
@@ -66,38 +87,49 @@ public class Analyzer {
         parser.createASTs(sourceFilePaths.toArray(new String[sourceFilePaths.size()]), null, new String[]{}, requestor , null );
     }
 
+    /**
+     * Spread all "external" dependencies of the project classes
+     * (i.e. if a class A has a dependency of a class B with "external" dependencies,
+     * then class B is consider "external" so class A has "external" dependencies too )
+     */
     private void spreadExternalDependencies() {
         //split classes
-        List<ClassInfo> bad = new ArrayList<>();
-        List<ClassInfo> good = new ArrayList<>();
+        List<ClassInfo> withExternal = new ArrayList<>();
+        List<ClassInfo> noExternal = new ArrayList<>();
         for (ClassInfo classInfo: classes){
             if (classInfo.hasExternalDependencies()){
-                good.add(classInfo);
+                noExternal.add(classInfo);
             }else{
-                bad.add(classInfo);
+                withExternal.add(classInfo);
             }
         }
+        //spread external dependencies
         int i = 0;
-        while (i<bad.size()){
-            ClassInfo badClassInfo = bad.get(i);
+        while (i<withExternal.size()){
+            ClassInfo badClassInfo = withExternal.get(i);
             boolean dependencyMatch = false;
             int j=0;
-            while (j<good.size() & !dependencyMatch){
-                ClassInfo goodClassInfo = good.get(j);
+            while (j<noExternal.size() & !dependencyMatch){
+                ClassInfo goodClassInfo = noExternal.get(j);
                 if (goodClassInfo.getDependencies().contains(badClassInfo.getFullName())){
                     dependencyMatch = true;
                     goodClassInfo.setExternalDependencies(true);
-                    good.remove(j);
-                    bad.add(goodClassInfo);
+                    noExternal.remove(j);
+                    withExternal.add(goodClassInfo);
                 }
                 j++;
             }
             i++;
         }
     }
-    public void makeReport() throws IOException {
-        String csvPath = project.getAbsolutePath() + File.separator + "testability_report.csv";
-        File csvFile = new File(csvPath);
+
+    /**
+     * Writes list with all project classes and whether they have "external dependencies" or not
+     * @param file file to write report to
+     * @throws IOException
+     */
+    public void makeReport(String file) throws IOException {
+        String csvPath = project.getAbsolutePath() + File.separator + file;
         Writer writer = new FileWriter(csvPath);
         CSVWriter csvWriter = new CSVWriter(writer);
         String[] headerRecord = {"Package", "Class", "External dependencies"};
@@ -113,7 +145,13 @@ public class Analyzer {
 
     }
 
-
+    /**
+     * Find all java source files in a directory recursevely and their directories paths
+     * @param folder folder to search
+     * @param sourceFilePaths list to store the file paths of the java files
+     * @param sourceDirPaths list to store the directories paths of the java files
+     * @return number of java files found in that directory (not recursive)
+     */
     private static int findAllClasses(File folder, List<String> sourceFilePaths, List<String> sourceDirPaths) {
         int numFiles=0;
         if (folder.exists()) {
@@ -137,6 +175,11 @@ public class Analyzer {
         return numFiles;
     }
 
+    /**
+     * If a java file is a dedicated test (i.es if it finishes with "Test" or "Tests")
+     * @param className the java class name
+     * @return
+     */
     public static boolean isTest(String className) {
         return className.endsWith("Test.java") || className.endsWith("Tests.java");
     }
@@ -145,7 +188,7 @@ public class Analyzer {
     public static void main(final String[] args) throws IOException {
         Analyzer analyzer = new Analyzer(new File("apache_projects/zeppelin"));
         analyzer.analyze();
-        analyzer.makeReport();
+        analyzer.makeReport("testability_report.csv");
     }
 
 }
