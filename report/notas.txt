@@ -1,0 +1,4 @@
+Once it has been defined what makes a class violates the principle, the analysis of the use of DIP is implemented in the \verb+analyzer+ package, which consist in two classes: \verb+Analyzer+ and \verb+ClassInfo+.\\
+A \verb+Analyzer+ instance can be constructed through the directory of a project and its method \verb+analyze()+ will return a list 
+of \verb+ClassInfo+.\\
+A \verb+ClassInfo+ represents a class of the project and holds all the required information: name, package, dependencies, if it has external dependencies...
