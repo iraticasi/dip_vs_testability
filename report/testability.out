@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [1][-]{section.3}{Related work}{}% 3
+\BOOKMARK [1][-]{section.4}{Methodology}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{DIP use measurement}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Testing measurement}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Collect projects}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{Implementation}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{Analyzer package}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Report package}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.3}{Collector package}{section.5}% 11
+\BOOKMARK [1][-]{section.6}{Results}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{Results by project}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.2}{Overall results}{section.6}% 14
+\BOOKMARK [1][-]{section.7}{Discussion}{}% 15
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 16
