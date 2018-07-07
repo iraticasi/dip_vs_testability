@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"com.github.iraticasi.testability.analyzer"},{"l":"com.github.iraticasi.testability.collector"},{"l":"com.github.iraticasi.testability.report"}]

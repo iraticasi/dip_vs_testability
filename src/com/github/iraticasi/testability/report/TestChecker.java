@@ -48,7 +48,7 @@ public class TestChecker {
         Writer writer = new FileWriter(file);
         CSVWriter csvWriter = new CSVWriter(writer);
         //write header
-        String[] headerRecord = {"Project name", "# classes with external dependencies", "of which has test", "# classes without external dependencies", "of which has test"};
+        String[] headerRecord = {"Project name", "# external classes with tests", "# of external classes without test", "# internal classes with tests", "# of internal classes without test",};
         csvWriter.writeNext(headerRecord);
         //write record for each project
         if (this.folder.exists()) {
@@ -74,7 +74,7 @@ public class TestChecker {
      *      <# internal classes with test>,
      *      <# internal classes withOUT test>}
      */
-    private static String[] checkExternal(File project){
+    public static String[] checkExternal(File project){
         //analyze
         List<ClassInfo> classInfos = new Analyzer(project).analyze();
         Set<String> tests = findAllJavaTest(project);
@@ -107,7 +107,7 @@ public class TestChecker {
      * @param libraries string array with the libraries names
      * @throws IOException
      */
-    private void librariesReport(String file, String[] libraries) throws IOException {
+    public void librariesReport(String file, String[] libraries) throws IOException {
         //create CSV
         Writer writer = new FileWriter(file);
         CSVWriter csvWriter = new CSVWriter(writer);
@@ -219,8 +219,8 @@ public class TestChecker {
 
 
     public static void main(String[] args) throws IOException {
-        //new TestChecker("apache_projects").checkAllExternal();
-        new TestChecker("apache_projects").librariesReport("libraries_report", new String[]{"java.io", "java.sql.", "java.net.", "javax"});
+        new TestChecker("apache_projects").externalReport("external_report.csv");
+        //new TestChecker("apache_projects").librariesReport("libraries_report.csv", new String[]{"java.io", "java.sql.", "java.net.", "javax"});
 
 
     }

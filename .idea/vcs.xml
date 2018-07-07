@@ -7,7 +7,9 @@
     <mapping directory="$PROJECT_DIR$/apache_projects/cordova-android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apache_projects/flink" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apache_projects/groovy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/hadoop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apache_projects/hbase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apache_projects/hive" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apache_projects/incubator-dubbo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apache_projects/incubator-heron" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apache_projects/incubator-skywalking" vcs="Git" />
