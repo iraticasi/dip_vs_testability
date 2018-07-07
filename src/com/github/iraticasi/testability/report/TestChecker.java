@@ -13,7 +13,7 @@ import java.util.*;
 
 /**
  * Class to report statistics of the existence of dedicated tests of classes
- *
+ * <p>
  * NOTES:
  * In this class, "dependency" refers to a violation of the dependency injection principle, i.e. a object
  * We consider a dependency to be "external" if it is on:
@@ -38,7 +38,8 @@ public class TestChecker {
 
 
     /**
-     * Creates a CSV report for external dependencies:
+     * Creates a CSV report for external dependencies.
+     * <p>
      * For each project, statistics of the relation between classes with external dependencies and classes with dedicated test
      * @param file the name of the file to write the CSV report
      * @throws IOException

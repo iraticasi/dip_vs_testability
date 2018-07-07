@@ -13,7 +13,7 @@ import java.util.*;
 
 /**
  * Dependency injection violations analyzer for a project
- *
+ * <p>
  * NOTES:
  * In this class, "dependency" refers to a violation of the dependency injection principle, i.e. a object
  * We consider a dependency to be "external" if it is on:

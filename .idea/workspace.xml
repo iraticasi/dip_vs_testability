@@ -2,13 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e3ffbd-cd37-4ff9-b8ea-e2f1b995e37a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries_report" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external_report.csv" beforeDir="false" afterPath="$PROJECT_DIR$/external_report.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/Analyzer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/Analyzer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/ClassInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/ClassInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/analyzer/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/ProjectCollector.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/ProjectCollector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/collector/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/TestChecker.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/TestChecker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/com/github/iraticasi/testability/report/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/report/TestChecker$LibraryInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/report/TestChecker$LibraryInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/report/TestChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testability2.0/com/github/iraticasi/testability/report/TestChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/package-info.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,40 +61,45 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="6724" />
+          <entry key="java" value="6747" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6724" />
+          <entry key="JAVA" value="6747" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
+          <entry key="java" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="151" column="82" lean-forward="true" selection-start-line="151" selection-start-column="82" selection-end-line="151" selection-end-column="82" />
+            <state relative-caret-position="225">
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+            <state relative-caret-position="-1025">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2686#2687#0" expanded="true" />
@@ -77,23 +121,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="50" column="79" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="79" />
+            <state relative-caret-position="145">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="68" column="116" selection-start-line="68" selection-start-column="116" selection-end-line="68" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -140,6 +184,8 @@
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/ClassInfo.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageReport.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/coverage/CoverageTest.java" />
+        <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/report/package-info.java" />
+        <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/package-info.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java" />
         <option value="$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java" />
@@ -148,9 +194,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="width" value="1900" />
-    <option name="height" value="538" />
+    <option name="x" value="12" />
+    <option name="width" value="1890" />
+    <option name="height" value="537" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectUserFactors">
@@ -172,14 +218,14 @@
     <factor id="categoricalFeature:prox_referenceList" />
     <factor id="categoricalFeature:recursion" />
     <factor id="completionFinishedType">
-      <dailyData date="2-7-2018">
-        <observation name="cancelled" value="66,0" />
+      <dailyData date="7-7-2018">
+        <observation name="cancelled" value="1,0" />
       </dailyData>
     </factor>
     <factor id="completionType" />
     <factor id="completionUsage">
-      <dailyData date="2-7-2018">
-        <observation name="count" value="66,0" />
+      <dailyData date="7-7-2018">
+        <observation name="count" value="1,0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity" />
@@ -204,21 +250,16 @@
     <factor id="itemPosition" />
     <factor id="mnemonicsUsage" />
     <factor id="prefixLength" />
-    <factor id="timeBetweenTyping">
-      <dailyData date="2-7-2018">
-        <observation name="average" value="31,0" />
-        <observation name="count" value="1,0" />
-      </dailyData>
-    </factor>
+    <factor id="timeBetweenTyping" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,6 +285,20 @@
               <item name="testability" type="462c0819:PsiDirectoryNode" />
               <item name="analyzer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="testability2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testability2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testability" type="462c0819:PsiDirectoryNode" />
+              <item name="collector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testability2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testability2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testability" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -254,7 +309,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530554438040" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1530977010458" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/code-coverage-jacoco" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -378,23 +433,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="-4" y="0" width="1928" height="1084" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20971185" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21344717" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.18249734" side_tool="true" weight="0.67622083" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.18303095" side_tool="true" visible="true" weight="0.16242038" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32908705" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32910052" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.8175027" visible="true" weight="0.38747346" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.81696904" weight="0.16242038" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39915073" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -414,15 +468,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19156884" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21184632" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.18249734" side_tool="true" visible="true" weight="0.67622083" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.18249734" side_tool="true" weight="0.67622083" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32908705" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32910052" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.8175027" visible="true" weight="0.67622083" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.8175027" visible="true" weight="0.38747346" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39915073" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -519,10 +573,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/examination/DependencyExaminer.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/report/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="45">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -531,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/ClassInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+        <state relative-caret-position="-1025">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2686#2687#0" expanded="true" />
@@ -541,10 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/analyzer/Analyzer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/collector/ProjectCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="151" column="82" lean-forward="true" selection-start-line="151" selection-start-column="82" selection-end-line="151" selection-end-column="82" />
+        <state relative-caret-position="145">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -553,8 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/iraticasi/testability/report/TestChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="50" column="79" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="79" />
+        <state relative-caret-position="300">
+          <caret line="68" column="116" selection-start-line="68" selection-start-column="116" selection-end-line="68" selection-end-column="116" />
         </state>
       </provider>
     </entry>

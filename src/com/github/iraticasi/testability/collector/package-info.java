@@ -1,4 +1,4 @@
 /**
  * Provides a apache project collector.
  */
-package com.github.iraticasi.testability.analyzer;
+package com.github.iraticasi.testability.collector;

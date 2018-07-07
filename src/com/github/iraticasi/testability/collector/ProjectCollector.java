@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 
 
 /**
- * Collects apache projects from github
+ * Collects apache projects from github.
  */
 public class ProjectCollector {
 
